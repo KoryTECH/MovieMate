@@ -10,7 +10,7 @@ btn.addEventListener("click", function (){
     }
     else {
         document.getElementById("errormessage").style.display = "none"
-        fetch(`http://www.omdbapi.com/?t=${searchword}&apikey=256dfbda`)
+        fetch(`https://www.omdbapi.com/?t=${searchword}&apikey=256dfbda`)
         .then(response =>{
             if(!response.ok){
             document.getElementById("errormessage").textContent = "TRY AGAIN";
@@ -40,4 +40,5 @@ btn.addEventListener("click", function (){
 
         document.querySelector(".display").style.display = "flex";
     })
+
 }})
