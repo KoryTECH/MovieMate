@@ -22,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  
   width: 1000px;
   min-height: 50vh;
   border-radius: 20px;
@@ -99,4 +99,5 @@ img {
         height: 300px;
     }
 }
+
 
