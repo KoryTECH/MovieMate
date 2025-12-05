@@ -40,5 +40,4 @@ btn.addEventListener("click", function (){
 
         document.querySelector(".display").style.display = "flex";
     })
-
 }})
