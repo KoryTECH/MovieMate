@@ -3,7 +3,8 @@
 const btn = document.querySelector("button");
 
 btn.addEventListener("click", function (){
-    const searchword = document.getElementById("input").value;
+    document.querySelector(".loading").style.display = "flex"
+    const searchword = document.querySelector("input").value;
     if( searchword === "") {
         document.getElementById("errormessage").style.display = "block"
         document.querySelector(".display").style.display = "none";
@@ -18,6 +19,7 @@ btn.addEventListener("click", function (){
         return response.json()}
     )
     .then(data => {
+        
         console.log(data)
         const title = data.Title;
         const genre = data.Genre;
@@ -37,7 +39,7 @@ btn.addEventListener("click", function (){
         document.getElementById("rating").textContent = `Rating: ${rating}`;
         document.querySelector("img").src = img;
 
-
+        document.querySelector(".loading").style.display = "none"
         document.querySelector(".display").style.display = "flex";
     })
 }})
