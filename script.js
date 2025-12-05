@@ -29,12 +29,12 @@ btn.addEventListener("click", function (){
         const img = data.Poster;
 
         document.getElementById("movie-title").textContent = title;
-        document.getElementById("genre").textContent = genre;
-        document.getElementById("director").textContent = director;
-        document.getElementById("actors").textContent = actors;
+        document.getElementById("genre").textContent = `Genre: ${genre}`;
+        document.getElementById("director").textContent = `Director: ${director}`;
+        document.getElementById("actors").textContent = `Actors: ${actors}`;
         document.getElementById("plot").textContent = plot;
-        document.getElementById("year").textContent = year;
-        document.getElementById("rating").textContent = rating;
+        document.getElementById("year").textContent = `Year: ${year}`;
+        document.getElementById("rating").textContent = `Rating: ${rating}`;
         document.querySelector("img").src = img;
 
 
