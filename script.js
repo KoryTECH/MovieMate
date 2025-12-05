@@ -4,6 +4,7 @@ const btn = document.querySelector("button");
 
 btn.addEventListener("click", function (){
     document.querySelector(".loading").style.display = "flex"
+    document.querySelector(".display").style.display = "none";
     const searchword = document.querySelector("input").value;
     if( searchword === "") {
         document.getElementById("errormessage").style.display = "block"
