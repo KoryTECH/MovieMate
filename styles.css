@@ -86,3 +86,12 @@ img {
     display: none;
     font-size: 2rem;
 }
+@media screen and (max-width: 480px) {
+    .display {
+        flex-direction: column;
+    }
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
