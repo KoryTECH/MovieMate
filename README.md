@@ -1,6 +1,6 @@
 # MovieMate
 
-A sleek and intuitive movie search application that fetches comprehensive movie information from the OMDB API (IMDb database). Built in one hour as a rapid development project.
+A sleek and intuitive movie search application that fetches comprehensive movie information from the OMDB API (IMDb database).
 
 ## Features
 
