@@ -58,7 +58,7 @@ btn.addEventListener("click", function(){
             document.getElementById("year").textContent = `Year: ${year}`;
             document.getElementById("rating").textContent = `Rating: ${rating}`;
             // document.querySelector(".img").style.background = `url(${img}) no-repeat center center / cover`;
-            document.querySelector(".img").src= `url(${img}) no-repeat center center / cover`;
+            document.querySelector(".img").src= `${img}`;
             
             loader.style.display = "none"
             errorMessage.style.display = "none"
@@ -76,3 +76,5 @@ btn.addEventListener("click", function(){
     }
 
 });
+
+
