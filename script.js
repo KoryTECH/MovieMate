@@ -3,8 +3,8 @@
 const btn = document.querySelector("button");
 
 btn.addEventListener("click", function(){
-    const movieName = document.getElementById("input").value;
-    const errorMessage = document.getElementById("errormessage");
+    const movieName = document.querySelector("input").value;
+    const errorMessage = document.querySelector(".errormessage");
     const loader = document.querySelector(".loading");
     const display = document.querySelector(".display");
 
@@ -12,7 +12,6 @@ btn.addEventListener("click", function(){
         errorMessage.style.display = "block";
         loader.style.display = "none";
         display.style.display = "none";
-        document.body.style.background = "url('bg.webp') no-repeat center center / cover";
     }
     else{
         errorMessage.style.display = "none";
@@ -58,8 +57,9 @@ btn.addEventListener("click", function(){
             document.getElementById("plot").textContent = plot;
             document.getElementById("year").textContent = `Year: ${year}`;
             document.getElementById("rating").textContent = `Rating: ${rating}`;
-            document.querySelector(".img").style.background = `url(${img}) no-repeat center center / cover`;
-            document.body.style.background = `url(${img}) no-repeat center center / cover`
+            // document.querySelector(".img").style.background = `url(${img}) no-repeat center center / cover`;
+            document.querySelector(".img").src= `url(${img}) no-repeat center center / cover`;
+            
             loader.style.display = "none"
             errorMessage.style.display = "none"
             display.style.display = "flex";
